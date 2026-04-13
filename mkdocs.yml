@@ -35,7 +35,11 @@ nav:
           - Pertemuan 8 - Tugas: back-end/01.TypeScript/08-mini-project.md
 
       - Golang:
-          - back-end/02.Golang/index.md
+          - Pertemuan 1 - Pengenalan Golang: back-end/02.Golang/01-pengenalan-golang.md
+          - Pertemuan 2 - Variable, Tipe Data, Operator: back-end/02.Golang/02-variabel-tipeData-operator.md
+          - Pertemuan 3 - Percabangan & Perulangan: back-end/02.Golang/03-percabangan-perulangan.md
+          - Pertemuan 4 - Array, Slice, Map: back-end/02.Golang/04-array-slice-map.md
+          - Pertemuan 5 - Function, Pointer, Error Handling: back-end/02.Golang/05-function-pointer-errorHandling.md
 
   - Mobile Flutter:
       - mobile-flutter/index.md
