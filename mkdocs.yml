@@ -34,8 +34,8 @@ nav:
           - Pertemuan 7 - Class & OOP: back-end/01.TypeScript/07-class-oop.md
           - Pertemuan 8 - Tugas: back-end/01.TypeScript/08-mini-project.md
 
-      - Nest JS:
-          - back-end/02.NestJS/index.md
+      - Golang:
+          - back-end/02.Golang/index.md
 
   - Mobile Flutter:
       - mobile-flutter/index.md
