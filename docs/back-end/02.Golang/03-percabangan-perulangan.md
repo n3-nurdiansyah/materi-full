@@ -64,14 +64,6 @@ for {
 }
 ```
 
----
-
-### **Tips Analogi untuk Pengajar**  
-* **If Short Statement:** Ibaratkan seperti **menyewa kamar hotel harian**. Variabel (`sisaStok`) hanya menyewa memori selama blok `if` itu berjalan. Begitu keluar dari kurung kurawal `}`, kuncinya ditarik dan memorinya langsung dikosongkan. Ini membuat Go sangat hemat RAM.  
-* **Infinite Loop (`for {}`):** Ibaratkan seperti **Satpam yang berjaga 24 jam**. Dia tidak akan pernah tidur (berulang terus) sampai ada perintah khusus dari komandan (`break`) untuk pulang.
-
----
-
 ### **Tugas Mandiri (Studi Kasus: Terminal ATM)**
 
 **Tantangan: "Simulasi Mesin ATM Sederhana"**  

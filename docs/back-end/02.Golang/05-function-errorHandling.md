@@ -1,4 +1,4 @@
-# Pertemuan 5: Function, Pointer, dan Error Handling
+# Pertemuan 5: Function dan Error Handling
 
 Seiring membesarnya aplikasi, kita tidak mungkin menumpuk semua kode di dalam `func main()`. Kita harus memecahnya menjadi potongan-potongan kecil yang bisa digunakan berulang kali. 
 
@@ -66,50 +66,13 @@ func main() {
 }
 ```
 
-## 3. Pointer (Penunjuk Alamat Memori)  
-Secara *default*, saat kita mengirim variabel ke dalam fungsi, Go akan "menggandakan" data tersebut (Copy by Value). Jika datanya besar, RAM akan cepat penuh.   
-Pointer memungkinkan fungsi mengubah data **asli** di memori tanpa perlu menggandakannya.
-
-- Simbol `&` (Ampersand): Mencari tahu alamat memori.
-- Simbol `*` (Asterisk): Mengambil/mengubah nilai di alamat tersebut.
-
-```go
-// Tanda *int berarti fungsi ini meminta ALAMAT dari variabel integer
-func diskonHarga(hargaAwal *int) {
-    // Ubah nilai di alamat aslinya
-    *hargaAwal = *hargaAwal - 5000 
-}
-
-func main() {
-    hargaKopi := 20000
-    fmt.Println("Harga Awal:", hargaKopi)
-
-    // Kirim alamat memori hargaKopi menggunakan &
-    diskonHarga(&hargaKopi) 
-
-    fmt.Println("Harga Setelah Diskon:", hargaKopi) // Output: 15000
-}
-```
-
----
-
-### **Tips Analogi untuk Pengajar**
-
-* **Function (Fungsi):** Ibaratkan **Koki Spesialis**. Anda tidak perlu tahu cara membuat sate, Anda cukup memberikan Daging Mentah (Parameter) kepada Koki Sate, lalu Koki tersebut akan mengembalikan Sate Matang (Return Value) kepada Anda.  
-* **Error Handling:** Ibaratkan **Satpam Bandara**. Sebelum Anda (data) diizinkan masuk ke pesawat (proses selanjutnya), barang bawaan Anda selalu dicek. *Ada barang terlarang (error)?* Jika ya, Anda ditahan di tempat (`if err != nil`).  
-* **Pointer:** Ini adalah analogi terbaiknya: **Dokumen Skripsi**.   
-    * Tanpa Pointer: Anda mengirim file `Skripsi.docx` ke Dosen via Email (Copy). Jika Dosen merevisi dan menyimpannya di laptopnya, file asli di laptop Anda **tidak akan berubah**.  
-    * Dengan Pointer: Anda membagikan **Link Google Docs** (`&`). Saat dosen mengubah isinya melalui link tersebut (`*`), dokumen asli milik Anda **ikut berubah**. Ini jauh lebih hemat karena file-nya tetap hanya ada satu.
-
----
-
 ### **Tugas Mandiri (Studi Kasus: E-Wallet)**
 
 **Tantangan: "Sistem Pembayaran E-Wallet Sederhana"**  
 Buatlah sebuah program Go dengan ketentuan:  
 1.  Buat folder dan inisialisasi module baru bernama `tugas-ewallet`.  
 2.  Buat sebuah fungsi bernama `bayarTagihan` dengan parameter:  
-    - `saldo` (bertipe pointer integer `*int`)  
+    - `saldo`
     - `jumlahTagihan` (bertipe integer biasa `int`)  
     - Mengembalikan tipe data `error`.  
 3.  Di dalam fungsi `bayarTagihan`:  

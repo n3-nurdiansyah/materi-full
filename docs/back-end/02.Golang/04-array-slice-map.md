@@ -56,15 +56,6 @@ Jika Slice menggunakan angka/indeks (0, 1, 2) untuk mencari data, **Map mengguna
     delete(hargaMenu, "Teh")
 ```
 
----
-
-### **Tips Analogi untuk Pengajar**
-
-* **Array vs Slice:** Ibaratkan **Array itu seperti Rak Sepatu**. Kalau raknya cuma 5 tingkat, ya cuma muat 5 sepatu. Kalau mau nambah, harus beli rak baru. Sedangkan **Slice itu seperti Gerbong Kereta Api**. Saat penumpang penuh, kita tinggal panggil fungsi `append`, dan otomatis gerbong baru akan tersambung di belakang.  
-* **Map:** Ibaratkan **Kontak di HP (Buku Telepon)**. Kita tidak menghafal "Teman saya ada di urutan ke-15" (itu Slice). Kita mencarinya pakai Nama (Key). "Cari kontak bernama *Budi*, lalu tampilkan *Nomor HP-nya* (Value)".
-
----
-
 ### **Tugas Mandiri (Studi Kasus: Sistem Manajemen Warung)**
 
 **Tantangan: "Aplikasi Kasir dan Keranjang Warung"**  

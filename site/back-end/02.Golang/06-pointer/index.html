@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../04-array-slice-map/">
+        <link rel="prev" href="../05-function-errorHandling/">
       
       
         <link rel="next" href="../../../mobile-flutter/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Pertemuan 5 - Function, Pointer, Error Handling - Modul Pak Nur</title>
+        <title>Pertemuan 6 - Pointer - Modul Pak Nur</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pertemuan-5-function-pointer-dan-error-handling" class="md-skip">
+        <a href="#pertemuan-6-pointer" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pertemuan 5 - Function, Pointer, Error Handling
+              Pertemuan 6 - Pointer
             
           </span>
         </div>
@@ -1161,6 +1161,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-function-errorHandling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pertemuan 5 - Function & Error Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1177,7 +1198,7 @@
           
   
   <span class="md-ellipsis">
-    Pertemuan 5 - Function, Pointer, Error Handling
+    Pertemuan 6 - Pointer
   </span>
   
 
@@ -1188,7 +1209,7 @@
         
   
   <span class="md-ellipsis">
-    Pertemuan 5 - Function, Pointer, Error Handling
+    Pertemuan 6 - Pointer
   </span>
   
 
@@ -1210,46 +1231,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-function-fungsi" class="md-nav__link">
+  <a href="#1-pendahuluan-apa-itu-pointer" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Function (Fungsi)
+      1. Pendahuluan: Apa itu Pointer?
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-error-handling-cara-golang" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Error Handling (Cara Golang)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-pointer-penunjuk-alamat-memori" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Pointer (Penunjuk Alamat Memori)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Pointer (Penunjuk Alamat Memori)">
+    <nav class="md-nav" aria-label="1. Pendahuluan: Apa itu Pointer?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tips-analogi-untuk-pengajar" class="md-nav__link">
+  <a href="#analogi-dunia-nyata" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips Analogi untuk Pengajar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tugas-mandiri-studi-kasus-e-wallet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tugas Mandiri (Studi Kasus: E-Wallet)
+      Analogi Dunia Nyata
     </span>
   </a>
   
@@ -1257,6 +1251,87 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-operator-dasar-pointer" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Operator Dasar Pointer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Operator Dasar Pointer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-dasar-tanpa-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Dasar (Tanpa Function)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pointer-dalam-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pointer dalam Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Pointer dalam Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-update-saldo-tabungan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Kasus: Update Saldo Tabungan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-level-pro-pointer-receiver-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Level Pro: Pointer Receiver Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Level Pro: Pointer Receiver Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-sistem-update-profil-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Kasus: Sistem Update Profil User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tugas-mandiri-studi-kasus" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Tugas Mandiri (Studi Kasus)
+    </span>
+  </a>
   
 </li>
       
@@ -2081,46 +2156,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-function-fungsi" class="md-nav__link">
+  <a href="#1-pendahuluan-apa-itu-pointer" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Function (Fungsi)
+      1. Pendahuluan: Apa itu Pointer?
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-error-handling-cara-golang" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Error Handling (Cara Golang)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-pointer-penunjuk-alamat-memori" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Pointer (Penunjuk Alamat Memori)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Pointer (Penunjuk Alamat Memori)">
+    <nav class="md-nav" aria-label="1. Pendahuluan: Apa itu Pointer?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tips-analogi-untuk-pengajar" class="md-nav__link">
+  <a href="#analogi-dunia-nyata" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips Analogi untuk Pengajar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tugas-mandiri-studi-kasus-e-wallet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tugas Mandiri (Studi Kasus: E-Wallet)
+      Analogi Dunia Nyata
     </span>
   </a>
   
@@ -2128,6 +2176,87 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-operator-dasar-pointer" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Operator Dasar Pointer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Operator Dasar Pointer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-dasar-tanpa-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Dasar (Tanpa Function)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pointer-dalam-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pointer dalam Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Pointer dalam Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-update-saldo-tabungan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Kasus: Update Saldo Tabungan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-level-pro-pointer-receiver-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Level Pro: Pointer Receiver Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Level Pro: Pointer Receiver Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-kasus-sistem-update-profil-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh Kasus: Sistem Update Profil User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tugas-mandiri-studi-kasus" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Tugas Mandiri (Studi Kasus)
+    </span>
+  </a>
   
 </li>
       
@@ -2146,122 +2275,132 @@
                   
 
 
-<h1 id="pertemuan-5-function-pointer-dan-error-handling">Pertemuan 5: Function, Pointer, dan Error Handling</h1>
-<p>Seiring membesarnya aplikasi, kita tidak mungkin menumpuk semua kode di dalam <code>func main()</code>. Kita harus memecahnya menjadi potongan-potongan kecil yang bisa digunakan berulang kali. </p>
-<h2 id="1-function-fungsi">1. Function (Fungsi)</h2>
-<p>Function adalah blok kode yang diberi nama dan dibuat untuk melakukan tugas spesifik. </p>
-<p><strong>A. Fungsi Dasar &amp; Parameter:</strong>
-<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-
-<span class="c1">// Fungsi yang menerima data (parameter)</span>
-<span class="kd">func</span><span class="w"> </span><span class="nx">sapaUser</span><span class="p">(</span><span class="nx">nama</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Halo, %s! Selamat datang kembali.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">nama</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">sapaUser</span><span class="p">(</span><span class="s">&quot;Rangga&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Memanggil fungsi</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<p><strong>B. Multiple Return Values (Keunikan Golang):</strong><br />
-Di bahasa lain, fungsi biasanya hanya bisa mengembalikan 1 nilai. Di Go, fungsi bisa mengembalikan 2 nilai atau lebih sekaligus. Ini sangat berguna!
-<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">hitungLuasKeliling</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">l</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">luas</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">l</span>
-<span class="w">    </span><span class="nx">keliling</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="nx">p</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">l</span><span class="p">)</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">luas</span><span class="p">,</span><span class="w"> </span><span class="nx">keliling</span>
-<span class="p">}</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Menangkap 2 nilai sekaligus</span>
-<span class="w">    </span><span class="nx">hasilLuas</span><span class="p">,</span><span class="w"> </span><span class="nx">hasilKeliling</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">hitungLuasKeliling</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Luas:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hasilLuas</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Keliling:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hasilKeliling</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<h2 id="2-error-handling-cara-golang">2. Error Handling (Cara Golang)</h2>
-<p>Golang tidak menggunakan <code>try-catch</code> seperti Java atau PHP. Di Go, <em>Error</em> diperlakukan sebagai sebuah nilai biasa yang dikembalikan oleh fungsi. </p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="s">&quot;errors&quot;</span>
-<span class="w">    </span><span class="s">&quot;fmt&quot;</span>
-<span class="p">)</span>
-
-<span class="c1">// Mengembalikan hasil pembagian DAN error (jika ada)</span>
-<span class="kd">func</span><span class="w"> </span><span class="nx">bagiAngka</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nx">errors</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="s">&quot;gagal: tidak bisa membagi dengan angka nol&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="c1">// nil berarti &quot;Kosong&quot; (Tidak ada error)</span>
-<span class="p">}</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hasil</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bagiAngka</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-
-<span class="w">    </span><span class="c1">// Pola Wajib Golang: Cek apakah error tidak kosong (!= nil)</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Terjadi Kesalahan:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="c1">// Hentikan proses</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hasil pembagian:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hasil</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="3-pointer-penunjuk-alamat-memori">3. Pointer (Penunjuk Alamat Memori)</h2>
-<p>Secara <em>default</em>, saat kita mengirim variabel ke dalam fungsi, Go akan "menggandakan" data tersebut (Copy by Value). Jika datanya besar, RAM akan cepat penuh. <br />
-Pointer memungkinkan fungsi mengubah data <strong>asli</strong> di memori tanpa perlu menggandakannya.</p>
+<h1 id="pertemuan-6-pointer">Pertemuan 6: Pointer</h1>
+<h2 id="1-pendahuluan-apa-itu-pointer">1. Pendahuluan: Apa itu Pointer?</h2>
+<p>Dalam pemrograman, variabel adalah tempat menyimpan data. Namun, data tersebut sebenarnya duduk di sebuah alamat fisik di dalam memori (RAM). <strong>Pointer</strong> adalah sebuah variabel yang isinya bukan data (seperti angka atau teks), melainkan <strong>alamat memori</strong> dari variabel lain.</p>
+<h3 id="analogi-dunia-nyata">Analogi Dunia Nyata</h3>
+<p>Jika variabel biasa adalah <strong>Rumah</strong>, maka Pointer adalah <strong>Secarik kertas berisi alamat rumah tersebut</strong>.</p>
 <ul>
-<li>Simbol <code>&amp;</code> (Ampersand): Mencari tahu alamat memori.</li>
-<li>Simbol <code>*</code> (Asterisk): Mengambil/mengubah nilai di alamat tersebut.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1">// Tanda *int berarti fungsi ini meminta ALAMAT dari variabel integer</span>
-<span class="kd">func</span><span class="w"> </span><span class="nx">diskonHarga</span><span class="p">(</span><span class="nx">hargaAwal</span><span class="w"> </span><span class="o">*</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Ubah nilai di alamat aslinya</span>
-<span class="w">    </span><span class="o">*</span><span class="nx">hargaAwal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">*</span><span class="nx">hargaAwal</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">5000</span><span class="w"> </span>
-<span class="p">}</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">hargaKopi</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">20000</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Harga Awal:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hargaKopi</span><span class="p">)</span>
-
-<span class="w">    </span><span class="c1">// Kirim alamat memori hargaKopi menggunakan &amp;</span>
-<span class="w">    </span><span class="nx">diskonHarga</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">hargaKopi</span><span class="p">)</span><span class="w"> </span>
-
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Harga Setelah Diskon:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hargaKopi</span><span class="p">)</span><span class="w"> </span><span class="c1">// Output: 15000</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="tips-analogi-untuk-pengajar"><strong>Tips Analogi untuk Pengajar</strong></h3>
-<ul>
-<li><strong>Function (Fungsi):</strong> Ibaratkan <strong>Koki Spesialis</strong>. Anda tidak perlu tahu cara membuat sate, Anda cukup memberikan Daging Mentah (Parameter) kepada Koki Sate, lalu Koki tersebut akan mengembalikan Sate Matang (Return Value) kepada Anda.  </li>
-<li><strong>Error Handling:</strong> Ibaratkan <strong>Satpam Bandara</strong>. Sebelum Anda (data) diizinkan masuk ke pesawat (proses selanjutnya), barang bawaan Anda selalu dicek. <em>Ada barang terlarang (error)?</em> Jika ya, Anda ditahan di tempat (<code>if err != nil</code>).  </li>
-<li><strong>Pointer:</strong> Ini adalah analogi terbaiknya: <strong>Dokumen Skripsi</strong>.   <ul>
-<li>Tanpa Pointer: Anda mengirim file <code>Skripsi.docx</code> ke Dosen via Email (Copy). Jika Dosen merevisi dan menyimpannya di laptopnya, file asli di laptop Anda <strong>tidak akan berubah</strong>.  </li>
-<li>Dengan Pointer: Anda membagikan <strong>Link Google Docs</strong> (<code>&amp;</code>). Saat dosen mengubah isinya melalui link tersebut (<code>*</code>), dokumen asli milik Anda <strong>ikut berubah</strong>. Ini jauh lebih hemat karena file-nya tetap hanya ada satu.</li>
-</ul>
+<li>
+<p><strong>Mengubah isi rumah:</strong> Datang langsung dan ganti catnya.</p>
+</li>
+<li>
+<p><strong>Mengubah via pointer:</strong> Lihat alamat di kertas, datangi rumah di alamat tersebut, lalu ganti catnya.</p>
 </li>
 </ul>
 <hr />
-<h3 id="tugas-mandiri-studi-kasus-e-wallet"><strong>Tugas Mandiri (Studi Kasus: E-Wallet)</strong></h3>
-<p><strong>Tantangan: "Sistem Pembayaran E-Wallet Sederhana"</strong><br />
-Buatlah sebuah program Go dengan ketentuan:<br />
-1.  Buat folder dan inisialisasi module baru bernama <code>tugas-ewallet</code>.<br />
-2.  Buat sebuah fungsi bernama <code>bayarTagihan</code> dengan parameter:<br />
-    - <code>saldo</code> (bertipe pointer integer <code>*int</code>)<br />
-    - <code>jumlahTagihan</code> (bertipe integer biasa <code>int</code>)<br />
-    - Mengembalikan tipe data <code>error</code>.<br />
-3.  Di dalam fungsi <code>bayarTagihan</code>:<br />
-    - Jika <code>*saldo</code> kurang dari <code>jumlahTagihan</code>, kembalikan <em>error</em> dengan pesan "Saldo tidak mencukupi!".<br />
-    - Jika cukup, kurangi <code>*saldo</code> dengan <code>jumlahTagihan</code>, lalu kembalikan <code>nil</code> (tidak ada error).<br />
-4.  Di dalam <code>func main()</code>:<br />
-    - Buat variabel <code>saldoUtama</code> sebesar 50.000.<br />
-    - Coba lakukan pembayaran pertama sebesar 30.000 menggunakan fungsi <code>bayarTagihan(&amp;saldoUtama, 30000)</code>. Cek errornya, jika sukses tampilkan sisa saldo.<br />
-    - Coba lakukan pembayaran kedua sebesar 25.000. Cek errornya. Karena saldo sisa 20.000, harusnya pembayaran ini gagal dan menampilkan pesan error.  </p>
-<p><strong>Output yang Diharapkan:</strong>
-<div class="highlight"><pre><span></span><code>=== TRANSAKSI 1 (Rp. 30.000) ===
-Pembayaran Berhasil! Sisa Saldo: Rp. 20000
+<h2 id="2-operator-dasar-pointer">2. Operator Dasar Pointer</h2>
+<p>Ada dua simbol keramat yang harus kalian hafal di luar kepala:</p>
+<ol>
+<li>
+<p><code>&amp;</code> (<strong>Ampersand</strong> / <em>Address-of</em>): Digunakan untuk mengambil alamat memori dari sebuah variabel.</p>
+</li>
+<li>
+<p><code>*</code> (<strong>Asterisk</strong> / <em>Dereferencing</em>): Digunakan untuk mengakses atau mengubah nilai yang ada di alamat tersebut.</p>
+</li>
+</ol>
+<h3 id="contoh-dasar-tanpa-function">Contoh Dasar (Tanpa Function)</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
 
-=== TRANSAKSI 2 (Rp. 25.000) ===
-Pembayaran Gagal: Saldo tidak mencukupi!
-Sisa Saldo Akhir: Rp. 20000
-</code></pre></div></p>
+<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nama</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;Abqory&quot;</span><span class="w"> </span><span class="c1">// Variabel biasa</span>
+
+<span class="w">    </span><span class="c1">// Kita buat pointer yang menunjuk ke alamat &#39;nama&#39;</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">pointerNama</span><span class="w"> </span><span class="o">*</span><span class="kt">string</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">nama</span><span class="w"> </span>
+
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Isi variabel nama:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">nama</span><span class="p">)</span><span class="w">          </span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Alamat variabel nama:&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">nama</span><span class="p">)</span><span class="w">      </span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Isi dari pointerNama:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">pointerNama</span><span class="p">)</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// MENGUBAH DATA VIA ALAMAT (Dereferencing)</span>
+<span class="w">    </span><span class="c1">// Kita gunakan tanda bintang untuk &quot;masuk&quot; ke alamat tersebut</span>
+<span class="w">    </span><span class="o">*</span><span class="nx">pointerNama</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Fawwaz&quot;</span>
+
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Nama setelah diubah via pointer:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">nama</span><span class="p">)</span><span class="w"> </span><span class="c1">// Output: Fawwaz</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="3-pointer-dalam-function">3. Pointer dalam Function</h2>
+<p>Secara default, Golang menggunakan sistem <em>Pass by Value</em>. Jika kalian mengirim variabel ke function tanpa pointer, Golang akan membuat "copy" atau duplikatnya. Perubahan di dalam function <strong>tidak akan</strong> merubah variabel asli di luar.</p>
+<p><strong>Solusinya?</strong> Kirim alamatnya menggunakan Pointer.</p>
+<h3 id="contoh-kasus-update-saldo-tabungan">Contoh Kasus: Update Saldo Tabungan</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span><span class="w"> </span><span class="nx">tambahSaldo</span><span class="p">(</span><span class="nx">saldo</span><span class="w"> </span><span class="o">*</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="nx">nominal</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Kita gunakan *saldo untuk mengubah nilai di alamat aslinya</span>
+<span class="w">    </span><span class="o">*</span><span class="nx">saldo</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">*</span><span class="nx">saldo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nominal</span>
+<span class="p">}</span>
+
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">tabungan</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">100000</span>
+
+<span class="w">    </span><span class="c1">// Kita kirim alamatnya menggunakan simbol &amp;</span>
+<span class="w">    </span><span class="nx">tambahSaldo</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">tabungan</span><span class="p">,</span><span class="w"> </span><span class="mi">50000</span><span class="p">)</span>
+
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Total Tabungan Sekarang:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">tabungan</span><span class="p">)</span><span class="w"> </span><span class="c1">// Output: 150000</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="4-level-pro-pointer-receiver-method">4. Level Pro: Pointer Receiver Method</h2>
+<p>Dalam standar industri, kita sering menempelkan fungsi langsung ke sebuah <code>struct</code> (objek). Ini disebut <strong>Method</strong>. Agar method tersebut bisa mengubah isi data objek yang asli, kita wajib gunakan <strong>Pointer Receiver</strong>.</p>
+<h3 id="contoh-kasus-sistem-update-profil-user">Contoh Kasus: Sistem Update Profil User</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">type</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Username</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">Email</span><span class="w">    </span><span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="c1">// Method ini &#39;menempel&#39; pada User menggunakan pointer receiver (*User)</span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">u</span><span class="w"> </span><span class="o">*</span><span class="nx">User</span><span class="p">)</span><span class="w"> </span><span class="nx">GantiEmail</span><span class="p">(</span><span class="nx">emailBaru</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">u</span><span class="p">.</span><span class="nx">Email</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">emailBaru</span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Log: Email berhasil diubah!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">user1</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">User</span><span class="p">{</span><span class="nx">Username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rangga_dev&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Email</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lama@gmail.com&quot;</span><span class="p">}</span>
+
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Email Lama:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">user1</span><span class="p">.</span><span class="nx">Email</span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1">// Memanggil method (Pointer diatur otomatis oleh Golang)</span>
+<span class="w">    </span><span class="nx">user1</span><span class="p">.</span><span class="nx">GantiEmail</span><span class="p">(</span><span class="s">&quot;baru@gmail.com&quot;</span><span class="p">)</span>
+
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Email Baru:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">user1</span><span class="p">.</span><span class="nx">Email</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><em>Catatan: Menggunakan pointer pada method jauh lebih efisien memori karena komputer tidak perlu menyalin ulang seluruh data objek (struct) ke dalam fungsi.</em></p>
+<hr />
+<h2 id="5-tugas-mandiri-studi-kasus">5. Tugas Mandiri (Studi Kasus)</h2>
+<p><strong>Judul Tugas: Sistem Manajemen Stok Toko Sederhana</strong></p>
+<p><strong>Instruksi:</strong></p>
+<ol>
+<li>
+<p>Buatlah sebuah <code>struct</code> bernama <code>Produk</code> yang memiliki field: <code>Nama</code> (string), <code>Harga</code> (int), dan <code>Stok</code> (int).</p>
+</li>
+<li>
+<p>Buatlah sebuah <strong>Method</strong> dengan <strong>Pointer Receiver</strong> bernama <code>KurangiStok</code> yang menerima parameter <code>jumlah</code> (int). Method ini harus mengurangi field <code>Stok</code> berdasarkan jumlah yang dimasukkan.</p>
+</li>
+<li>
+<p>Buatlah sebuah <strong>Function Biasa</strong> (bukan method) bernama <code>DiskonProduk</code> yang menerima parameter <code>p *Produk</code> dan <code>persen</code> (int). Function ini harus mengubah <code>Harga</code> produk tersebut setelah dipotong diskon.</p>
+</li>
+<li>
+<p>Di dalam <code>func main()</code>:</p>
+</li>
+<li>Buat satu objek produk (Contoh: "Keyboard Mechanical", Harga: 500000, Stok: 10).</li>
+<li>Panggil method <code>KurangiStok</code> sebanyak 2 unit.</li>
+<li>Panggil function <code>DiskonProduk</code> sebesar 10%.</li>
+<li>Tampilkan data produk terakhir (Nama, Stok, dan Harga).</li>
+</ol>
+<p><strong>Output yang diharapkan:</strong>
+Stok harus menjadi 8 dan Harga harus menjadi 450000.</p>
+<hr />
+<p><em>Tips: Jika kalian bingung kapan pakai <code>*</code> dan <code>&amp;</code>, ingat ini: <code>&amp;</code> untuk mendapatkan alamatnya, <code>*</code> untuk mengolah isinya.</em></p>
 
 
 
@@ -2297,7 +2436,7 @@ Sisa Saldo Akhir: Rp. 20000
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../04-array-slice-map/" class="md-footer__link md-footer__link--prev" aria-label="Sebelumnya: Pertemuan 4 - Array, Slice, Map">
+          <a href="../05-function-errorHandling/" class="md-footer__link md-footer__link--prev" aria-label="Sebelumnya: Pertemuan 5 - Function &amp; Error Handling">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2307,7 +2446,7 @@ Sisa Saldo Akhir: Rp. 20000
                 Sebelumnya
               </span>
               <div class="md-ellipsis">
-                Pertemuan 4 - Array, Slice, Map
+                Pertemuan 5 - Function & Error Handling
               </div>
             </div>
           </a>
